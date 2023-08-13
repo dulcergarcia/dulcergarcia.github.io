@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/logo_circle.png">
+    <link href="https://fonts.cdnfonts.com/css/mofista" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/classica-2" rel="stylesheet">
+
+    <title>Dulce García | Lifestyle Photographer</title>
+</head>
+<body>
+<!--Emcabezado-->
+    <div class="header">
+        <div class="header-left">
+            <img id="header-left-item-img" src="assets/logo_circle.png" width="65" height="65">
+            <h1 id="header-left-item-txt" vertical-align="middle">Dulce García | Lifestyle Photographer</h1>
+        </div>
+
+        <div class="header-right">
+            <img id="header-right-item-img-contact" class="header-right-img" src="https://api.iconify.design/streamline/mail-send-envelope-envelope-email-message-unopened-sealed-close.svg" width="100%" height="100%">
+            <h3 id="header-right-item-txt-contact" class="header-right-item-text" onclick="openForm()">Contacto</h3>
+            
+            <img id="header-right-item-img-find" class="header-right-img" src="https://api.iconify.design/streamline/interface-arrows-bend-up-right-2-arrow-bend-curve-change-direction-up-to-right.svg" width="100%" height="100%">
+            <h3 id="header-right-item-txt-find" class="header-right-item-text" onclick="scrollMap()">Cómo Llegar</h3>
+        </div>
+    </div>
+
+<!--Formulario-->
+    <div class="form" id="myForm">
+        <form target="_blank" action="https://formsubmit.co/8edd7c1f13a817399ca8d3aa5a178476" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <h2 id="form-text">Contactar</h2>
+
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Nombre (opcional)">
+                    </div>
+                
+                    <div class="col">
+                        <input type="tel" name="phone" class="form-control" placeholder="Número de teléfono (opcional)">
+                    </div>
+
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Correo Electronico*" required>
+                    </div>
+
+                    <div class="col">
+                        <textarea name="message" class="form-control" rows="10" placeholder="Tu mensaje*" required></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <p>* Requerido</p>
+            
+            <button type="button" class="btn close" onclick="closeForm()">Cerrar</button>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+        </form>
+    </div>
+
+    <div id="overlay-form" onclick="closeForm()"></div>
+
+<!--Slider-->
+    <div class="slider">
+        <div id="slider">
+            <ul id="slider-wrapper">
+                <li><img src="assets/slider/Slider2.jpg" height="100%" width="100%"></li>
+                <li><img src="assets/slider/Slider3.jpg" height="100%" width="100%"></li> 
+                <li><img src="assets/slider/Slider4.jpg" height="100%" width="100%"></li>
+                <li><img src="assets/slider/Slider1.jpg" height="100%" width="100%"></li>
+            </ul>
+
+            <a id="prev" href="#">&#8810;</a>
+            <a id="next" href="#">&#8811;</a>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--Sobre mi-->
+    <div class="about-me">
+        <div class="about-me-container">
+            <br>
+            <h3 id="about-me-header">SOBRE MÍ</h3>
+            <p>Emprendedora Mexicana licenciada en Diseño Gráfico y Animación con especialidad en Fotografía, ubicada en Reynosa, Tamaulipas</p>
+            <br>
+
+            <div id="about-me-list-whole">
+                <p>¿Qué diferencia mi negocio?</p>
+                <ul>
+                    <li>Especializada en fotografía Lifestyle y Retratos: Bodas, cumpleaños, embarazos y otros</li>
+                    <li>Pet Friendly: Deja que tu mascota te acompañe en las fotos</li>
+                    <li>Diseño gráfico para negocios: Diseño de imagen, logotipos, imagenes promocionales y otros</li>
+                    <li>Trato amigable y ambiente tranquilo</li>
+                    <li>LGBTQ+ friendly</li>
+                </ul>
+            </div>
+            
+            <br>
+            <br>
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--Galeria-->
+    <div class="gallery">
+        <h3 id="gallery-header">GALERÍA</h3>
+
+        <div class="gallery-image">
+            <div class="gallery-image-column">
+                <a class="gallery-image-atag" href="https://www.facebook.com/dulcegarciafyd/photos/pb.100065071057476.-2207520000./236889480154676/?type=3" target="_blank">
+                    <img class="gallery-image-tall" src="assets/gallery/1b.jpg" width="100%" height="100%">
+                </a>
+
+                <a class="gallery-image-atag" href="https://www.facebook.com/dulcegarciafyd/photos/pb.100065071057476.-2207520000./238295383347419/?type=3" target="_blank">
+                    <img class="gallery-image-short" class="gallery-image-tall" src="assets/gallery/2b.jpg" width="100%" height="100%">
+                </a>
+                
+                <a class="gallery-image-atag" href="https://www.facebook.com/dulcegarciafyd/photos/pb.100065071057476.-2207520000./268086150368342/?type=3" target="_blank">
+                    <img class="gallery-image-tall" src="assets/gallery/3b.jpg" width="100%" height="100%">
+                </a>
+            </div>
+
+
+
+            <div class="gallery-image-column">
+                <a class="gallery-image-atag" href="https://www.facebook.com/dulcegarciafyd/photos/pb.100065071057476.-2207520000./1068681033642179/?type=3" target="_blank">
+                    <img class="gallery-image-short" src="assets/gallery/4b.jpg" width="100%" height="100%">
+                </a>
+                
+                <a class="gallery-image-atag" href="https://www.facebook.com/dulcegarciafyd/photos/pb.100065071057476.-2207520000./241880436322247/?type=3" target="_blank">
+                    <img class="gallery-image-tall" src="assets/gallery/5b.jpg" width="100%" height="100%">
+                </a>
+                
+                <a class="gallery-image-atag" href="https://www.facebook.com/photo.php?fbid=650561177122912&set=pb.100065071057476.-2207520000.&type=3" target="_blank">
+                    <img class="gallery-image-tall" src="assets/gallery/6b.jpg" width="100%" height="100%">
+                </a>
+            </div>
+
+
+            <div class="gallery-image-column">
+                <a class="gallery-image-atag" href="https://www.facebook.com/photo.php?fbid=422496953262670&set=pb.100065071057476.-2207520000.&type=3" target="_blank">
+                    <img class="gallery-image-tall" src="assets/gallery/7b.jpg" width="100%" height="100%">
+                </a>
+
+                <a class="gallery-image-atag" href="https://www.facebook.com/dulcegarciafyd/photos/pb.100065071057476.-2207520000./1322957298214550/?type=3" target="_blank">
+                    <img class="gallery-image-tall" src="assets/gallery/8b.jpg" width="100%" height="100%">
+                </a>
+                
+                <a class="gallery-image-atag" href="https://www.facebook.com/photo.php?fbid=470178095161222&set=pb.100065071057476.-2207520000.&type=3" target="_blank">
+                    <img class="gallery-image-short" src="assets/gallery/9b.jpg" width="100%" height="100%">
+                </a>
+            </div>
+        </div>
+       
+    </div>
+    <br>
+    <br>
+    <br>
+
+<!--Direccion-->
+    <div class="contact" id="contactID" align="center">
+        <div class="contact-container">
+            <h3 id="contact-header">CONTACTAR</h3>
+
+            <div class="map" id="map" >
+                <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.02413171341902!2d-98.32434875553574!3d26.053635069700054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86650f3b009f1405%3A0x4f57cbb6e5db0785!2sDulce%20Garc%C3%ADa%20%7C%20Lifestyle%20Photographer!5e0!3m2!1sen!2smx!4v1682326265875!5m2!1sen!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <br>
+
+            <div class="contact-form-add">
+                <div class="contact-column">
+                    <div class="form2" id="myForm">
+                        <form target="_blank" action="https://formsubmit.co/8edd7c1f13a817399ca8d3aa5a178476" method="POST">
+                            <div class="form-group2">
+                                <div class="form-row2">
+                                    <h3>Mandar correo</h3>
+                                    
+                                    <div class="col">
+                                        <input type="text" name="name" class="form-control2" placeholder="Nombre (opcional)">
+                                    </div>
+                    
+                                    <div class="col">
+                                        <input type="tel" name="phone" class="form-control2" placeholder="Número de teléfono (opcional)">
+                                    </div>
+    
+                                    <div class="col">
+                                        <input type="email" name="email" class="form-control2" placeholder="Correo Electronico*" required>
+                                    </div>
+    
+                                    <div class="col">
+                                        <textarea name="message" class="form-control2" rows="10" placeholder="Tu mensaje*" required></textarea>
+                                    </div>
+                                </div>
+
+                                <p>* Requerido</p>
+
+                                <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-column">
+                    <div class="address">
+                        <h3>Dirección</h3>
+                        
+                        <ul>
+                            <li>Río Tamesí 18</li>
+                            <li>Las Fuentes Sección Lomas</li>
+                            <li>88743 Reynosa, Tamps.</li>
+                            <li>México</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+<!--Facebook-->
+<!--
+    <div class="facebook" align="center">
+        <iframe class="facebook-embed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdulcegarciafyd&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" data-tabs="posts, about" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" loading="lazy"></iframe>
+    </div>
+-->
+    
+
+    <div class="facebook-sticky">
+        <iconify-icon onclick="openFB()" icon="el:facebook" style="color: #3b5998;" width="60" height="60"></iconify-icon>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
